@@ -4,6 +4,14 @@ from datetime import datetime
 
 
 # Create your views here.
+def about(request):
+    return render(request, "first_app/about.html")
+
+
+def contact(request):
+    return render(request, "first_app/contact.html")
+
+
 def home(request):
     d = {
         "author": "rahim",
